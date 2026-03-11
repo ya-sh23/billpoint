@@ -1,0 +1,35 @@
+<nav class="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-100 bg-white sticky top-0 z-50 shadow-sm">
+  <div class="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105" routerLink="/">
+    <!-- BillPoint Logo -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>
+    </svg>
+    <span class="text-xl font-bold text-gray-800 tracking-tight">Bill<span class="text-primary blur-0">Point</span></span>
+  </div>
+
+  <!-- Desktop Menu -->
+  <div class="hidden md:flex items-center gap-8 font-medium text-gray-600">
+    <a routerLink="/" class="hover:text-primary transition-colors cursor-pointer">Home</a>
+    <a class="hover:text-primary transition-colors cursor-pointer">About Us</a>
+    <a class="hover:text-primary transition-colors cursor-pointer">Pricing</a>
+    <a class="hover:text-primary transition-colors cursor-pointer">Contact Us</a>
+
+    <!-- Centralized Login Button -->
+    <div class="flex items-center gap-4">
+      <button routerLink="/register" class="hover:text-primary transition-colors font-semibold">
+        Sign Up
+      </button>
+      <button routerLink="/login" class="px-6 py-2.5 bg-primary hover:bg-primary-dull transition-all duration-300 text-white rounded-full font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+        Login
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Toggle -->
+  <div class="md:hidden flex items-center gap-4">
+    <button routerLink="/login" class="text-sm px-4 py-1.5 bg-primary text-white rounded-full">Login</button>
+    <button aria-label="Menu" class="text-gray-600 hover:text-primary transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </div>
+</nav>
